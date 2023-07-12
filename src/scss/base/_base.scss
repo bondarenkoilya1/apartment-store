@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#root {
+  font-family: var(--font-family), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-reset {
+  list-style-type: none;
+}
+
+.btn-reset {
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.span--block {
+  display: block;
+}
