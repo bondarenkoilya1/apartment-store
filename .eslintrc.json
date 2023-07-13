@@ -17,12 +17,18 @@
       "version": "detect"
     }
   },
-  "plugins": ["react"],
+  "plugins": ["react", "prettier", "simple-import-sort"],
   "rules": {
     "prettier/prettier": [
       "error",
       {
         "endOfLine": "auto"
+      }
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [["^react"], ["^antd"], ["^@?\\w"], ["@/(.*)"], ["^[./]"]]
       }
     ]
   }
