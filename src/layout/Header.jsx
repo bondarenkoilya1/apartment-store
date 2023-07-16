@@ -1,19 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { ReactComponent as PhoneIcon } from "../assets/images/home_header/phone.svg";
-import { Button, HeaderNav, List } from "../components";
+import { Button, HeaderNav, List, Logo } from "../components";
 
 export const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h2 className="header__title">
-          <Link to="/" className="header__logo">
-            APARTMENTS
-            <span className="span--block header__logo-subtitle">store</span>
-          </Link>
-        </h2>
+        <Logo className="logo" />
         <HeaderNav className="header__nav" />
         <List className=" list-reset header__functions">
           <a href="tel:+12317495765" className="header__functions-phone">

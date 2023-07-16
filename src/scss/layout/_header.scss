@@ -9,41 +9,6 @@
     justify-content: space-between;
   }
 
-  &__title {
-    margin: 0;
-  }
-
-  &__logo {
-    display: inline-block;
-
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 26px;
-    color: var(--red);
-    text-align: center;
-    text-transform: uppercase;
-
-    transition: all 0.3s ease-in-out;
-
-    &:focus {
-      border-radius: 10px;
-      outline: 1px solid var(--red);
-      outline-offset: 10px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    &:hover {
-      color: var(--dark-red);
-      transition: all 0.3s ease-in-out;
-    }
-
-    &-subtitle {
-      font-weight: 400;
-      color: var(--grey);
-      text-transform: none;
-    }
-  }
-
   &__nav-list,
   &__functions {
     display: flex;
