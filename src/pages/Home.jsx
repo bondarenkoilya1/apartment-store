@@ -1,5 +1,11 @@
 import React from "react";
 
+import { Assistance } from "../layout";
+
 export const Home = () => {
-  return <></>;
+  return (
+    <main className="main">
+      <Assistance />
+    </main>
+  );
 };
