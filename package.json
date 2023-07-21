@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint .",
-    "lint:css": "stylelint ."
+    "lint:css": "stylelint .",
+    "lint:css:fix": "stylelint . --fix"
   },
   "browserslist": {
     "production": [

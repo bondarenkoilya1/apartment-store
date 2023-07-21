@@ -54,10 +54,8 @@
 
       &:focus {
         border-radius: 10px;
-        outline: none;
         outline: 1px solid var(--red);
         outline-offset: 10px;
-
         transition: all 0.3s ease-in-out;
       }
 

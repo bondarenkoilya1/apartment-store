@@ -1,0 +1,59 @@
+.assistance {
+  position: relative;
+  padding: 100px 0;
+  background: url("../../assets/images/home_assistance/apartments.svg") no-repeat var(--red);
+  background-position: bottom right 300px;
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+  }
+
+  &__title {
+    max-width: 600px;
+
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: var(--white);
+
+    &--highlighted {
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid var(--white);
+      border-radius: 20px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 20px 100px;
+
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--grey);
+
+    background-color: var(--white);
+    border-radius: 10px;
+    outline: 3px solid transparent;
+    box-shadow: 2px 2px 4px 0 #a1303c;
+
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      outline: 3px solid var(--white);
+      outline-offset: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--dark-red);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
