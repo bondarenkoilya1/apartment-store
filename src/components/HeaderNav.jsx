@@ -1,14 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import PropTypes from "prop-types";
-
 import { headerNavItems } from "../data";
 import { List, ListItem } from "./List";
 
-export const HeaderNav = ({ className, ...attrs }) => {
+export const HeaderNav = () => {
   return (
-    <nav className={className} {...attrs}>
+    <nav className="header__nav">
       <List className="list-reset header__nav-list">
         {headerNavItems &&
           headerNavItems.map(({ text, id, href }) => (
@@ -21,12 +19,4 @@ export const HeaderNav = ({ className, ...attrs }) => {
       </List>
     </nav>
   );
-};
-
-HeaderNav.propTypes = {
-  className: PropTypes.string
-};
-
-HeaderNav.defaultProps = {
-  className: ""
 };
