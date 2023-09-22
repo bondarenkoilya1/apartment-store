@@ -1,14 +1,12 @@
 import React from "react";
 
-import PropTypes from "prop-types";
-
 import { guideListItems } from "../data";
 import { Image } from "./Image";
 import { List, ListItem } from "./List";
 
-export const GuideList = ({ className, ...attrs }) => {
+export const GuideList = () => {
   return (
-    <List tag="ol" className={className} {...attrs}>
+    <List tag="ol" className="list-reset guide__list">
       {guideListItems &&
         guideListItems.map(({ text, id, imageSrc, imageAlt, imageWidth, imageHeight }) => (
           <ListItem key={id} className="guide__list-item">
@@ -24,12 +22,4 @@ export const GuideList = ({ className, ...attrs }) => {
         ))}
     </List>
   );
-};
-
-GuideList.propTypes = {
-  className: PropTypes.string
-};
-
-GuideList.defaultProps = {
-  className: ""
 };
