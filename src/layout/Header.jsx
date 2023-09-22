@@ -8,8 +8,8 @@ export const Header = () => {
     <header className="header">
       <div className="container">
         <Logo className="logo" />
-        <HeaderNav className="header__nav" />
-        <List className=" list-reset header__functions">
+        <HeaderNav />
+        <List className="list-reset header__functions">
           <a href="tel:+12317495765" className="header__functions-phone">
             <PhoneIcon className="header__functions-phone-icon" />
             <span className="header__functions-phone-text">+ 1 231 749 5765</span>
