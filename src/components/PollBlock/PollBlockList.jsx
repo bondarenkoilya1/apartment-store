@@ -1,6 +1,6 @@
 import React from "react";
 
-import { pollListItems } from "../../data/pollListItems";
+import { pollListItems } from "../../data";
 import { List, ListItem } from "../List";
 
 export const PollBlockList = () => {
