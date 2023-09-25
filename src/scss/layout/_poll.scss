@@ -74,11 +74,25 @@
 
       font-size: 23px;
       font-weight: 700;
-      color: var(--white,);
+      color: var(--white);
 
       background: var(--red);
       border-radius: 10px;
+      outline: 3px solid transparent;
       box-shadow: 2px 2px 5px 0 #f0f0f0;
+
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        outline: 3px solid var(--red);
+        outline-offset: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        background-color: var(--black);
+        transition: all 0.3s ease-in-out;
+      }
     }
 
     &__list {
