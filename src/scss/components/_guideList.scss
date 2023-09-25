@@ -1,0 +1,49 @@
+.guide__list {
+  counter-reset: guideListCounter;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-item {
+    counter-increment: guideListCounter;
+
+    position: relative;
+
+    width: 30%;
+    width: 380px;
+    height: 380px;
+    padding: 30px 0;
+
+    text-align: center;
+
+    border: 1px solid var(--light-grey);
+    border-radius: 3px 30px 30px;
+
+    &::before {
+      content: counter(guideListCounter);
+
+      position: absolute;
+      top: -3%;
+      left: 0;
+
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 20px;
+      color: var(--dark-blue);
+    }
+  }
+
+  &-text {
+    display: inline-block;
+
+    max-width: 280px;
+    padding: 10px 30px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--grey);
+
+    border: 1px solid var(--light-grey);
+    border-radius: 50px;
+  }
+}

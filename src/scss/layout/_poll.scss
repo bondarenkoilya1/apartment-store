@@ -1,0 +1,114 @@
+.poll {
+  &__title {
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--dark-blue);
+    text-align: center;
+
+    &--highlighted {
+      display: inline-block;
+      padding: 1px 10px;
+      border: 1px solid var(--red);
+      border-radius: 20px;
+    }
+  }
+
+  &-block {
+    display: flex;
+
+    max-width: 1040px;
+    margin: 70px auto 0;
+
+    background: url("../../assets/images/home_poll/curved-arrow.svg") no-repeat var(--white);
+    background-position: bottom 26% right 10%;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 1px 3px 20px 0 rgb(240 240 240 / 80%);
+
+    &__img {
+      position: relative;
+      transform: scaleX(-1);
+
+      width: 290px;
+
+      background: url("../../assets/images/apartments.svg") no-repeat var(--red);
+      background-position: bottom right 19%;
+      border-radius: 0 20px 20px 0;
+    }
+
+    &__info {
+      padding: 70px 70px 60px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--grey);
+
+      &--highlighted {
+        color: var(--red);
+      }
+    }
+
+    &__title {
+      max-width: 480px;
+      margin-top: 70px;
+
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 45px;
+      color: var(--dark-blue);
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 30px;
+      padding: 20px 186px;
+
+      font-size: 23px;
+      font-weight: 700;
+      color: var(--white);
+
+      background: var(--red);
+      border-radius: 10px;
+      outline: 3px solid transparent;
+      box-shadow: 2px 2px 5px 0 #f0f0f0;
+
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        outline: 3px solid var(--red);
+        outline-offset: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        background-color: var(--black);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &__list {
+      margin-top: 20px;
+      padding-left: 20px;
+
+      &-wrapper {
+        margin-top: 60px;
+      }
+
+      &-text,
+      &-item {
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--grey);
+      }
+    }
+  }
+}
