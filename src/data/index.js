@@ -1,1 +1,1 @@
-export { headerNavItems } from "./headerNavItems";
+export { headerListItems } from "./headerListItems";
