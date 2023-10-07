@@ -1,0 +1,93 @@
+@use "../abstracts/mixins" as mixin;
+
+.footer {
+  padding: 50px 0;
+  background-color: var(--grey);
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    &-text {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    &-general {
+      &-item {
+        @include mixin.mb(20px);
+      }
+
+      &-link {
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        outline: 1px solid transparent;
+        display: inline-flex;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background-repeat: no-repeat;
+        }
+
+        &.location::before {
+          background-image: url(../../assets/images/home_footer/location.svg);
+        }
+
+        &.phone::before {
+          background-image: url(../../assets/images/home_footer/phone.svg);
+        }
+
+        &:focus {
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:focus {
+          border-radius: 4px;
+          outline: 1px solid var(--red);
+          outline-offset: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          color: var(--red);
+        }
+      }
+    }
+
+    &-additional {
+      &-title {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 6px;
+        display: flex;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          background-repeat: no-repeat;
+          background-image: url(../../assets/images/home_footer/clock.svg);
+          position: absolute;
+          left: -10%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

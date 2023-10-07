@@ -29,4 +29,16 @@
       text-transform: none;
     }
   }
+
+  &--light & {
+    &__link {
+      &:hover {
+        color: var(--white);
+      }
+
+      &-subtitle {
+        color: var(--white);
+      }
+    }
+  }
 }

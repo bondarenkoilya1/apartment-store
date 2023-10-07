@@ -13,7 +13,7 @@ export const guideListItems = [
   },
   {
     id: 1,
-    text: "I'll go to www.apartments-store.eu and find out!",
+    text: "I'll go to apartments-store.ua and find out!",
     imageSrc: laptopWomanIllustration,
     imageAlt: "Laptop woman",
     imageWidth: 291,

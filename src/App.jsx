@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Header } from "./layout/Header";
+import { Footer, Header } from "./layout";
 import { Error, Home } from "./pages";
 
 export const App = () => {
@@ -13,6 +13,8 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error />} />
       </Routes>
+
+      <Footer />
     </Router>
   );
 };

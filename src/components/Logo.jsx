@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 export const Logo = ({ className, ...attrs }) => {
   return (
-    <h2 className={className} {...attrs}>
+    <h2 className={`logo ${className}`} {...attrs}>
       <Link to="/" className="logo__link">
         APARTMENTS
         <span className="span--block logo__link-subtitle">store</span>
