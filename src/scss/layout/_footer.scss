@@ -12,10 +12,10 @@
 
   &__list {
     &-text {
-      color: var(--white);
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;
+      color: var(--white);
     }
 
     &-general {
@@ -24,30 +24,29 @@
       }
 
       &-link {
-        align-items: center;
-        transition: all 0.3s ease-in-out;
-        outline: 1px solid transparent;
         display: inline-flex;
+        align-items: center;
+        outline: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
 
         &::before {
           content: "";
+
           display: block;
+
           width: 24px;
           height: 24px;
           margin-right: 10px;
+
           background-repeat: no-repeat;
         }
 
         &.location::before {
-          background-image: url(../../assets/images/home_footer/location.svg);
+          background-image: url("../../assets/images/home_footer/location.svg");
         }
 
         &.phone::before {
-          background-image: url(../../assets/images/home_footer/phone.svg);
-        }
-
-        &:focus {
-          transition: all 0.3s ease-in-out;
+          background-image: url("../../assets/images/home_footer/phone.svg");
         }
 
         &:focus {
@@ -58,34 +57,41 @@
         }
 
         &:hover {
-          transition: all 0.3s ease-in-out;
           color: var(--red);
+          transition: all 0.3s ease-in-out;
         }
       }
     }
 
     &-additional {
       &-title {
-        color: var(--white);
+        position: relative;
+
+        display: flex;
+
+        margin-bottom: 6px;
+
         font-size: 16px;
         font-weight: 400;
         line-height: 26px;
-        margin-bottom: 6px;
-        display: flex;
-        position: relative;
+        color: var(--white);
 
         &::before {
           content: "";
+
+          position: absolute;
+          top: 50%;
+          left: -10%;
+          transform: translate(-50%, -50%);
+
           display: block;
+
           width: 24px;
           height: 24px;
           margin-right: 10px;
+
+          background-image: url("../../assets/images/home_footer/clock.svg");
           background-repeat: no-repeat;
-          background-image: url(../../assets/images/home_footer/clock.svg);
-          position: absolute;
-          left: -10%;
-          top: 50%;
-          transform: translate(-50%, -50%);
         }
       }
     }

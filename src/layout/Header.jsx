@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ReactComponent as PhoneIcon } from "../assets/images/phone.svg";
-import { Button, HeaderNav, List, Logo } from "../components";
+import { HeaderNav, List, Logo } from "../components";
 
 export const Header = () => {
   return (
@@ -14,7 +14,9 @@ export const Header = () => {
             <PhoneIcon className="header__functions-phone-icon" />
             <span className="header__functions-phone-text">+ 380 99 868 6456</span>
           </a>
-          <Button className="btn-reset header__functions-callback">Call back</Button>
+          <a href="tel:+380998686456" className="header__functions-callback">
+            Call back
+          </a>
         </List>
       </div>
     </header>
