@@ -1,3 +1,3 @@
-export { headerNavItems } from "./headerNavItems";
+export { headerListItems } from "./headerListItems";
 export { guideListItems } from "./guideListItems";
 export { pollListItems } from "./pollListItems";
